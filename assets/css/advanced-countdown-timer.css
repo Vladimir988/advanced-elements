@@ -1,0 +1,61 @@
+#advanced-countdown-timer {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#advanced-countdown-timer .advanced-countdown-timer-separator {
+  display: none;
+}
+
+#advanced-countdown-timer * + .advanced-countdown-timer-separator {
+  display: block;
+}
+
+#advanced-countdown-timer .advanced-countdown-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  text-align: center;
+  margin: 10px;
+}
+
+.advanced-countdown-item .item-value {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.advanced-countdown-timer-separator {
+  font-size: 30px;
+}
+
+/*# sourceMappingURL=advanced-countdown-timer.css.map */

@@ -1,0 +1,73 @@
+.advanced-settings-wrapper form {
+  padding: 15px;
+  margin: 15px 15px 15px 0;
+}
+
+.advanced-settings-wrapper form h2 {
+  padding: 15px;
+  margin: 0;
+  background: #fff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+  font-weight: 700;
+  font-size: 2.308rem;
+  line-height: 2.308rem;
+}
+
+.advanced-settings-wrapper form table.form-table {
+  margin-top: 15px;
+  background: #fff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.advanced-settings-wrapper form table.form-table tbody tr th {
+  padding: 15px;
+  border-right: 1px solid #eee;
+}
+
+.advanced-settings-wrapper form table.form-table tbody tr th label {
+  padding-top: 7px;
+}
+
+.advanced-settings-wrapper form table.form-table tbody tr td {
+  padding: 15px 15px 15px 35px;
+}
+
+.advanced-settings-wrapper form table.form-table tbody tr td .api-key-description {
+  padding: 0 2px;
+  color: #96989a;
+  font-size: 0.9rem;
+  margin: 4px 0 0 0;
+  outline: 0;
+  line-height: 1.3;
+}
+
+.advanced-settings-wrapper form table.form-table tbody tr td .api-key-description a {
+  color: #0073aa;
+  font-size: 0.9rem;
+  transition-property: border,background,color;
+  transition-duration: .05s;
+  transition-timing-function: ease-in-out;
+}
+
+.advanced-settings-wrapper form table.form-table tbody tr td .api-key-description a:hover {
+  text-decoration: none;
+}
+
+.advanced-settings-wrapper form p.submit {
+  margin-top: 15px;
+  padding: 15px;
+  background: #fff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.advanced-settings-wrapper form p.submit input#submit {
+  min-width: 90px;
+}
+
+@media (max-width: 782px) {
+  .advanced-settings-wrapper form table.form-table tbody tr td {
+    padding: 15px;
+  }
+}
+
+/*# sourceMappingURL=settings-page.css.map */

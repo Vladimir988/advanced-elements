@@ -1,0 +1,145 @@
+.advanced-pricing-table {
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #7a7a7a;
+  position: relative;
+  text-align: center;
+  padding: 30px;
+}
+
+.advanced-pricing-table img.advanced-pricing-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.advanced-pricing-icon {
+  margin-bottom: 15px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.advanced-pricing-icon i {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #61ce70;
+}
+
+.advanced-pricing-icon i::before {
+  font-size: 50px;
+}
+
+.advanced-pricing-before-title {
+  margin-bottom: 15px;
+  color: #23a455;
+  font-family: "Roboto", Sans-serif;
+  font-weight: 400;
+}
+
+.advanced-pricing-title {
+  margin-bottom: 15px;
+  color: #23a455;
+  font-family: "Roboto", Sans-serif;
+  font-weight: 400;
+}
+
+.advanced-pricing-after-title {
+  margin-bottom: 15px;
+  color: #23a455;
+  font-family: "Roboto", Sans-serif;
+  font-weight: 400;
+}
+
+.advanced-pricing-price-box {
+  line-height: 1;
+  padding: 10px 0;
+}
+
+.advanced-pricing-price-box .advanced-pricing-before-price {
+  display: inline-block;
+  font-size: 25px;
+  color: #54595f;
+}
+
+.advanced-pricing-price-box .advanced-pricing-price {
+  font-size: 70px;
+  color: #54595f;
+  vertical-align: middle;
+}
+
+.advanced-pricing-price-box .advanced-pricing-after-price {
+  display: inline-block;
+  font-size: 25px;
+  color: #54595f;
+}
+
+.advanced-pricing-list-box {
+  margin-bottom: 15px;
+}
+
+.advanced-pricing-list li a {
+  text-decoration: none;
+}
+
+.advanced-pricing-list-icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.advanced-pricing-list-icon i {
+  vertical-align: inherit;
+  transition: .3s;
+}
+
+.advanced-pricing-list-icon i::before {
+  color: #7a7a7a;
+  font-size: 14px;
+  transition: .3s;
+}
+
+.advanced-pricing-list-text {
+  color: #54595f;
+  font-family: "Roboto", Sans-serif;
+  font-weight: 400;
+  padding-left: 5px;
+  vertical-align: middle;
+  transition: .3s;
+}
+
+.advanced-pricing-description {
+  margin-bottom: 15px;
+}
+
+.advanced-pricing-button {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+}
+
+.advanced-pricing-button a {
+  font-family: "Roboto", Sans-serif;
+  font-weight: 500;
+  padding: 15px 25px;
+  border-radius: 4px;
+  background: #23a455;
+  color: #fff;
+  transition: .3s;
+  text-decoration: none;
+}
+
+.advanced-pricing-button a:hover {
+  background: rgba(35, 164, 85, 0.8);
+}
+
+/*# sourceMappingURL=pricing-table.css.map */

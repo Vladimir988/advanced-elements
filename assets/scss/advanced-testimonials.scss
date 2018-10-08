@@ -1,0 +1,89 @@
+.elementor {
+	.advanced-testimonials {
+		width: calc(100% + 2px);
+	}
+}
+.advanced-testimonials-inner {
+	margin-right: 1px;
+	overflow: hidden;
+}
+.advanced-testimonials-content {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-flow: column nowrap;
+	-ms-flex-flow: column nowrap;
+	flex-flow: column nowrap;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.advanced-testimonials-img-wrap {
+	.advanced-testimonials-img {
+		max-width: 100%;
+		width: 100%;
+		height: 100%;
+		-o-object-fit: cover;
+		object-fit: cover;
+	}
+}
+.advanced-testimonials-img-wrap {
+	overflow: hidden;
+	line-height: 0;
+}
+.advanced-testimonials-title,
+.advanced-testimonials-name,
+.advanced-testimonials-position,
+.advanced-testimonials-date {
+	width: 100%;
+}
+.advanced-testimonials-comment {
+	max-width: 100%;
+	background-color: #6ec1e4;
+}
+.advanced-testimonials-icon-before,
+.advanced-testimonials-icon-after {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.advanced-testimonials-icon-before,
+.advanced-testimonials-icon-after {
+	.advanced-testimonials-icon-inner {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-flow: column nowrap;
+		-ms-flex-flow: column nowrap;
+		flex-flow: column nowrap;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
+		border-radius: 50%;
+	}
+}

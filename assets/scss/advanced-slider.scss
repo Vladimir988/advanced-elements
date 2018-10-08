@@ -1,0 +1,143 @@
+.advanced-slider {
+	.sp-arrow {
+		&::before,
+		&::after {
+			display: none;
+		}
+		i {
+			color: #ffffff;
+			font-size: 25px;
+		}
+	}
+	.sp-grab {
+		cursor: auto;;
+	}
+	.sp-thumbnail-container {
+		cursor: pointer;
+		position: relative;
+		&::before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			border-width: 2px;
+			border-style: solid;
+			border-color: transparent;
+			transition: 0.3s ease;
+		}
+	}
+	.sp-layer {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-flow: column nowrap;
+		-ms-flex-flow: column nowrap;
+		flex-flow: column wrap;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		.sp-layer-inner {
+			position: relative;
+			width: 100%;
+			z-index: 2;
+		}
+		&::before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: #000;
+			opacity: 0.3;
+		}
+	}
+	.advanced-slider-title {
+		width: 100%;
+		margin-bottom: 15px;
+		h4 {
+			color: #ffffff;
+		}
+	}
+	.advanced-slider-subtitle {
+		width: 100%;
+		margin-bottom: 15px;
+		h6 {
+			color: #ffffff;
+		}
+	}
+	.advanced-slider-descr {
+		width: 100%;
+		margin-bottom: 15px;
+		p {
+			color: #ffffff;
+		}
+	}
+	.advanced-slider-btn-wrap {
+		width: 100%;
+		color: #ffffff;
+		a {
+			margin: 0 10px;
+			padding: 5px 15px;
+			border-radius: 4px;
+			background: #61ce70;
+			color: #ffffff;
+			transition: 0.4s !important;
+		}
+	}
+	.sp-full-screen-button {
+		font-size: 0;
+		&::before {
+			display: none;
+		}
+		transform: none;
+		i {
+			transition: 0.3s;
+			color: #ffffff;
+			font-size: 25px;
+			line-height: 1;
+		}
+		&:hover {
+			i {
+				color: #61ce70;
+			}
+		}
+	}
+	.sp-arrow {
+		width: auto;
+		height: auto;
+		i {
+			font-size: 45px;
+			line-height: 1;
+			transition: 0.4s;
+			width: 45px;
+			height: 45px;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		&:hover {
+			i {
+				color: #61ce70;
+			}
+		}
+	}
+	.sp-buttons {
+		.sp-button {
+			transition: .4s !important;
+		}
+	}
+}

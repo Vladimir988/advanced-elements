@@ -1,0 +1,226 @@
+.advanced-carousel-wrapper {
+	overflow: hidden;
+	padding: 30px;
+}
+.advanced-circle-carousel {
+	position: relative;
+	padding-top: 100%;
+}
+
+.advanced-circle-carousel .slides {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.advanced-circle-carousel .content-box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+}
+
+.advanced-circle-carousel .content-box.active {
+	pointer-events: auto;
+}
+
+.advanced-circle-carousel .content-box.active .content-box-inner {
+	z-index: 1;
+	opacity: 1;
+	transform: scale(1);
+}
+
+.advanced-circle-carousel .content-box.active .content-title-wrap {
+	opacity: 1;
+	visibility: visible;
+	transform: scale(1);
+}
+
+.advanced-circle-carousel .content-box-inner {
+	width: 55%;
+	height: 55%;
+	border-radius: 50%;
+	overflow: hidden;
+	z-index: 0;
+	opacity: 0;
+	box-shadow: -20px 20px 50px rgba(0, 0, 0, 0.3);
+	transition: .55s ease-in-out;
+	transform: scale(0.85);
+}
+
+.advanced-circle-carousel .content-box-inner .content-box-img {
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+}
+
+.advanced-circle-carousel .content-title-wrap {
+	opacity: 0;
+	visibility: hidden;
+	transition: all .5s .4s;
+	overflow: hidden;
+	text-align: center;
+	z-index: 30;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	padding: 15px;
+	transform: scale(0.8);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.advanced-circle-carousel .content-title h4 {
+	font-size: 35px;
+	display: inline-block;
+}
+
+.advanced-circle-carousel .content-title h4 {
+	font-size: 18px;
+}
+
+.advanced-circle-carousel .pagination {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+	width: 90%;
+	height: 90%;
+	border-radius: 50%;
+	border: 3px solid #1F2845;
+	pointer-events: none;
+	user-select: none;
+}
+
+.advanced-circle-carousel .pagination .dot {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 13%;
+	width: 13%;
+	border-radius: 50%;
+	pointer-events: auto;
+	transition: .3s;
+	background-color: #1F2845;
+	font-size: 14px;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.advanced-circle-carousel .pagination .dot:before, .advanced-circle-carousel .pagination .dot:after {
+	position: absolute;
+	bottom: 0;
+	margin: auto;
+	content: "";
+	transform: rotate(-180deg);
+	opacity: 0;
+	transition: all 1s;
+}
+
+.advanced-circle-carousel .pagination .dot:before {
+	transform-origin: top right;
+	top: -50%;
+	right: 140%;
+	width: 30%;
+	height: 30%;
+	filter: blur(3px);
+	border: 6px solid #F48E2A;
+	z-index: -1;
+}
+
+.advanced-circle-carousel .pagination .dot:after {
+	transform-origin: bottom left;
+	top: 100%;
+	left: 130%;
+	width: 40%;
+	height: 40%;
+	border-radius: 50%;
+	border: 10px solid #FE9290;
+	z-index: 5;
+}
+
+.advanced-circle-carousel .pagination .dot:hover {
+	transform: translate(-50%, -50%) scale(1.05);
+	cursor: pointer;
+	background: #AA54ED;
+	color: #fff;
+}
+
+@media (min-width: 768px) {
+	.advanced-circle-carousel .pagination .dot {
+		font-size: 26px;
+	}
+}
+
+.advanced-circle-carousel .pagination .item {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+
+.advanced-circle-carousel .pagination .item.active .dot {
+	background-color: #654BE4;
+	color: #fff;
+}
+
+.advanced-circle-carousel .pagination .item.active .dot:before,
+.advanced-circle-carousel .pagination .item.active .dot:after {
+	transform: rotate(0deg);
+	opacity: .6;
+}
+
+.advanced-circle-carousel .prev,
+.advanced-circle-carousel .next {
+	display: none;
+}
+
+	.advanced-circle-carousel .prev,
+	.advanced-circle-carousel .next {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		width: 25px;
+		height: 56px;
+		cursor: pointer;
+	}
+	.advanced-circle-carousel .prev span,
+	.advanced-circle-carousel .next span {
+		writing-mode: vertical-rl;
+		text-orientation: upright;
+		font-weight: 700;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	.advanced-circle-carousel .prev {
+		left: -30px;
+	}
+	.advanced-circle-carousel .next {
+		right: -30px;
+	}
